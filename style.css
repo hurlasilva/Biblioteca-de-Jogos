@@ -1,5 +1,7 @@
-  @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+/*Fonte do google importada */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');  
 
+/* Título da páginaq */
 .logo h1{
     font-family: "Pixelify Sans", sans-serif;
     text-align: center;
@@ -9,6 +11,7 @@
     padding: 15px 0;
     border-color: aliceblue;
 }
+/* Imagem da logo */
 .topo {
     width: 150px; 
     height: auto; 
@@ -22,6 +25,58 @@
     padding: 0px 0px;
     box-sizing: border-box;
 }
+
+/* Botão do menu */
+.menu-btn{
+    font-size:35px;
+    cursor:pointer;
+    padding:15px;
+    position:fixed;
+    top:10px;
+    left: 10px;
+    z-index:1000; /*Ordem de empilhamento*/
+    color:black;
+    
+}
+/* Imagem do botão do menu */
+.menu-btn img{
+    width: 150px; 
+    height: auto; 
+    float: right;
+    margin-top: -20px;
+    
+}
+
+/* Menu lateral */
+.menu{
+    height:100%;
+    width:0;
+    position:fixed;
+    top:0;
+    left:0;
+    background:white;
+    overflow-x:hidden;
+    transition:0.4s;
+    padding-top:60px;
+}
+
+/* Itens do menu */
+.menu a{
+    display:block;
+    padding:20px;
+    text-decoration:none;
+    color:black;
+    font-size:25px;
+}
+
+/* Botão de fechar */
+.fechar{
+    position:absolute;
+    top:10px;
+    right:20px;
+    font-size:35px;
+}
+
 h1{
     font-family: "Pixelify Sans", sans-serif;
     text-align: center;
@@ -38,35 +93,32 @@ body{
 p{
     font-family: 'Times New Roman', Times, serif;
 }
-.menu{
+
+section{
+    height: 600px;
+    padding: 20px;
+}
+
+img{
+    align-items: baseline;
+    width: 200px;
+    height: 200px;
+    align-items: corner; 
+}
+.jogos button{
+    display: flex;
+}
+.misa{
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 15px;
     background-image: linear-gradient(to right, #ff5757, #8c52ff);
 }
-.menu a{
+.misa a{
     text-decoration: none;
     background-color: white;
     border: 1px solid black;
     padding: 10px 20px;
     color: black;
-}
-section{
-    height: 500px;
-    padding: 20px;
-}
-button{
-    text-decoration: none;
-    background-color: white;
-    border: 1px solid black;
-    padding: 10px 20px;
-    color: black;
-    text-align: center;
-}
-img{
-    align-items: baseline;
-    width: 200px;
-    height: 200px;
-    align-items: corner; 
 }

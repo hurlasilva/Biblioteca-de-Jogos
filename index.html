@@ -9,21 +9,33 @@
 <body>
     <div class="logo">
     <h1> 
-        <button class="info"><a href="sobre.html">Sobre</a></button>
+        <span class="menu-btn" onclick="abrirMenu()">
+            <img src="fonts/Design sem nome (2).png" alt="">
+        </span>
+
         LIBRARY OF GAMES 
+
         <img src="fonts/BIBLIOTECA (2).png" alt="logo" class="topo">
     </h1>
     </div>
 
-   <div class="menu">
-    <a href="sobre.html">Início</a>
-    <a href="#cadastro">Cadastro</a>
-    <a href="#jogos">Jogos</a>
-    <a href="contato.html">Contato</a>
+   
+    <div id="meuMenu" class="menu">
+
+        <a href="javascript:void(0)" class="fechar" onclick="fecharMenu()">
+            x
+        </a>
+
+        <a href="#sobre">Sobre</a>
+        <a href="#cadastro">Cadastro/Login</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="contato.html">Contato</a>
+
     </div>
 
-    <section id="inicio">
-        <h2>Início</h2>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
         <p>Aqui você encontrará as histórias de alguns jogos</p>
     </section>
 
@@ -59,5 +71,19 @@
         <h2>Contato</h2>
         <p>Área de contato.</p>
     </section>
+
+    <script>
+
+        function abrirMenu(){
+            document.getElementById("meuMenu").style.width = "250px";
+        }
+
+        function fecharMenu(){
+            document.getElementById("meuMenu").style.width = "0px";
+        }
+        
+
+    </script>
+
 </body>
 </html>
