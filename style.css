@@ -16,7 +16,7 @@
     width: 150px; 
     height: auto; 
     float: right;
-}
+} 
 .logo {
     justify-content: space-between; 
     align-items: center; 
@@ -25,7 +25,6 @@
     padding: 0px 0px;
     box-sizing: border-box;
 }
-
 /* Botão do menu */
 .menu-btn{
     font-size:35px;
@@ -33,7 +32,7 @@
     padding:15px;
     position:fixed;
     top:10px;
-    left: 10px;
+    left: 0px;
     z-index:1000; /*Ordem de empilhamento*/
     color:black;
     
@@ -45,8 +44,8 @@
     float: right;
     margin-top: -20px;
     
+    
 }
-
 /* Menu lateral */
 .menu{
     height:100%;
@@ -55,11 +54,10 @@
     top:0;
     left:0;
     background:white;
-    overflow-x:hidden;
+    overflow-x:hidden; /* o que acontece se ultrapassar os limites; */
     transition:0.4s;
     padding-top:60px;
 }
-
 /* Itens do menu */
 .menu a{
     display:block;
@@ -68,7 +66,6 @@
     color:black;
     font-size:25px;
 }
-
 /* Botão de fechar */
 .fechar{
     position:absolute;
@@ -76,7 +73,6 @@
     right:20px;
     font-size:35px;
 }
-
 h1{
     font-family: "Pixelify Sans", sans-serif;
     text-align: center;
@@ -86,34 +82,31 @@ h1{
     padding: 15px 0;
 }
 body{
-    background-color: rgb(247, 250, 248);
+    background-color: rgb(214, 224, 220);
     font-family: "Pixelify Sans", sans-serif;
-    background-image: linear-gradient(to right, #ffbaba, #d4bfff);
+    
 }
 p{
     font-family: 'Times New Roman', Times, serif;
 }
-
 section{
     height: 600px;
     padding: 20px;
 }
-
 img{
     align-items: baseline;
     width: 200px;
     height: 200px;
     align-items: corner; 
 }
-.jogos button{
-    display: flex;
-}
+
 .misa{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 20px; /*Espaçamento entre os elementos*/
     padding: 15px;
     background-image: linear-gradient(to right, #ff5757, #8c52ff);
+    align-items: center;
 }
 .misa a{
     text-decoration: none;
@@ -121,4 +114,29 @@ img{
     border: 1px solid black;
     padding: 10px 20px;
     color: black;
+}
+.jogos{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.jogos a{
+    align-items: center;
+
+}
+.jogos img{
+    align-items: center;
+    border-radius: 20%;
+    width: 250px; 
+    height: auto; 
+    float: right;
+}
+.jogos button{
+    border-radius: 20%;
+    background-color: rgb(210, 232, 244);
+}
+.voltar button{
+   border-radius: 10%;
+   width: 100px;
+   height: 30px;
 }
